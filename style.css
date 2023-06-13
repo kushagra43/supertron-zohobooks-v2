@@ -300,6 +300,7 @@ body {
     color: white;
     border: none;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 
 .tab {
