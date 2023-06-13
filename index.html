@@ -319,19 +319,36 @@
     <div class=" container p60v">
       <h3 class="blueheadingbig offerings-heading"> Benefits of Zoho Books</h3>
       <div class="tabs">
-        <button class="tab-button whiteparah normal" id="tab0-button" onclick="showTab(0)">Receivables</button>
+
+<button class="tab-button whiteparah normal" id="tab0-button" onclick="showTab(0)"
+          onMouseOver="this.style.borderBottom = '1px solid white'"
+          onMouseOut="this.style.borderBottom='0px'">Receivables</button>
         <div class="border"></div>
-        <button class="tab-button whiteparah normal" id="tab1-button" onclick="showTab(1)">Payables</button>
+        <button class="tab-button whiteparah normal" id="tab1-button" onclick="showTab(1)"
+          onMouseOver="this.style.borderBottom = '1px solid white'"
+          onMouseOut="this.style.borderBottom='0px'">Payables</button>
         <div class="border"></div>
-        <button class="tab-button whiteparah normal" id="tab2-button" onclick="showTab(2)">Inventory</button>
+        <button class="tab-button whiteparah normal" id="tab2-button" onclick="showTab(2)"
+          onMouseOver="this.style.borderBottom = '1px solid white'"
+          onMouseOut="this.style.borderBottom='0px'">Inventory</button>
         <div class="border"></div>
-        <button class="tab-button whiteparah normal" id="tab3-button" onclick="showTab(3)">Banking</button>
+        <button class="tab-button whiteparah normal" id="tab3-button" onclick="showTab(3)"
+          onMouseOver="this.style.borderBottom = '1px solid white'"
+          onMouseOut="this.style.borderBottom='0px'">Banking</button>
         <div class="border"></div>
-        <button class="tab-button whiteparah normal" id="tab4-button" onclick="showTab(4)">Timesheet</button>
+        <button class="tab-button whiteparah normal" id="tab4-button" onclick="showTab(4)"
+          onMouseOver="this.style.borderBottom = '1px solid white'"
+          onMouseOut="this.style.borderBottom='0px'">Timesheet</button>
         <div class="border"></div>
-        <button class="tab-button whiteparah normal" id="tab5-button" onclick="showTab(5)">Contacts</button>
+        <button class="tab-button whiteparah normal" id="tab5-button" onclick="showTab(5)"
+          onMouseOver="this.style.borderBottom = '1px solid white'"
+          onMouseOut="this.style.borderBottom='0px'">Contacts</button>
         <div class="border"></div>
-        <button class="tab-button whiteparah normal" id="tab6-button" onclick="showTab(6)">Reports</button>
+        <button class="tab-button whiteparah normal" id="tab6-button" onclick="showTab(6)"
+          onMouseOver="this.style.borderBottom = '1px solid white'"
+          onMouseOut="this.style.borderBottom='0px'">Reports</button>
+      
+      
       </div>
 
       <div class="tab" id="tab1">
@@ -601,8 +618,11 @@
   <script>
 
     function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
+ window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    
     }
 
     // Migration Tools
