@@ -11,6 +11,13 @@ body {
     width: 100vw;
     overflow-x: hidden;
 }
+.red-blue {
+    background: linear-gradient(90deg, #e73239 0.01%, #013d84 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
 
 /* Navigation */
 .nav-container {
