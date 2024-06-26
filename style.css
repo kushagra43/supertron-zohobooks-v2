@@ -892,4 +892,7 @@ body {
         justify-content: center !important;
         align-items: center !important;
     }
+    .navbar-button{
+        font-size: 14px !important;
+    }
 }
