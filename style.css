@@ -888,4 +888,8 @@ body {
     .offerings-grid {
         column-gap: 10px;
     }
+    .footer-cta{
+        justify-content: center !important;
+        align-items: center !important;
+    }
 }
