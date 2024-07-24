@@ -4,9 +4,21 @@ document.querySelector("#myForm").addEventListener("submit", function (e) {
   // Collect form data
   let formData = new FormData(this);
 
+  const number = formData.get("mobilephone");
+  
+  var expr = /^(0|91)?[6-9][0-9]{9}$/;
+  if (!expr.test(number)) {
+    document.getElementById('mobileError').style.display="block"
+    document.querySelector("#mobileError").innerHTML =
+      "Please enter a valid 10 digit mobile number";
+    document.querySelector("#mobileError").style.color = "red";
+    document.querySelector("#mobileError").style.display = "block";
+    return;
+  }
+
   // Send post request to the server
   fetch(
-    "https://forms.hubspot.com/uploads/form/v2/23736002/688d8b8a-37c8-4bf1-bd94-9e2e31d4c0d8",
+    "https://forms.hubspot.com/uploads/form/v2/23736002/5f288f3f-b0e0-4f28-96d4-fc665ceeea3d",
     {
       method: "POST",
       body: formData,

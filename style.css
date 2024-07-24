@@ -40,6 +40,10 @@ body {
     margin-bottom: 60px;
 }
 
+.label_input{
+    color: white;
+}
+
 .header-text-container {
     max-width: 600px;
     width: 100%;
@@ -73,6 +77,10 @@ body {
 }
 
 #thankYou {
+    display: none;
+}
+
+#mobileError{
     display: none;
 }
 
